@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <title>{% block title %}
-            Магазин
-            {% endblock %}
+        Магазин
+    {% endblock %}
     </title>
 </head>
 <body>
-    <header>
-        <h1>Шапка</h1>
-    </header>
+<header>
+    <h1>Шапка</h1>
+</header>
 
-    <main>
-        {% block content %}
+<main>
+    {% block content %}
         Главная
         <img src="/static/images/shop.jpg" alt="магазин">
-        {% endblock %}
-    </main>
+    {% endblock %}
+</main>
 
-    <footer>
-        <h1>Подвал</h1>
-    </footer>
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
+<footer>
+    <h1>Подвал</h1>
+</footer>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
