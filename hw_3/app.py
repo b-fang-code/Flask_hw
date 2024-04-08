@@ -9,7 +9,7 @@ from model import db, User
 from form import RegisterForm
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your secret key'
+app.config['SECRET_KEY'] = '9285fe058f36476d5989e7d5f356df9b5dde035e5066790687e04278ca50dd88'
 csrf = CSRFProtect(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db.init_app(app)
