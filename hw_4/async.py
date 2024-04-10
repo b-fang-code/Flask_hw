@@ -18,7 +18,6 @@ async def main():
     tasks = [calculate_partial_sum(arr, start, end) for start, end in chunks]
     partial_sums = await asyncio.gather(*tasks)
 
-    # Вычисляем общую сумму
     total_sum = sum(partial_sums)
 
     print(f"Общая сумма элементов массива: {total_sum} подсчитана за {time.time() - start_time} секунд")
